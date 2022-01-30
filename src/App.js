@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import { SpinnerCircular } from "spinners-react";
 import "./App.css";
 
 function App() {
@@ -6,14 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Hello World!</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <SpinnerCircular />
       </header>
     </div>
   );
