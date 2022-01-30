@@ -4,7 +4,7 @@ body {
 }
 
 .weather-app-wrapper {
-  max-width: 800px;
+  max-width: 750px;
   max-height: 600px;
   margin: 30px auto;
   color: #ffffff;
@@ -15,5 +15,5 @@ body {
   border-style: ridge;
   padding: 20px;
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/022/109/original/background5.gif?1638661717);
-  background-size: 875px;
+  background-size: 800px;
 }
