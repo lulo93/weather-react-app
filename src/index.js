@@ -9,6 +9,14 @@ function App() {
   return (
     <div className="App">
       <Weather />
+      <div className="credits">
+        <small>
+          <a href="https://github.com/lulo93/weather-react-app" target="_blank">
+            Open-source code
+          </a>
+          {""} by Luisa Rua Estrada
+        </small>
+      </div>
     </div>
   );
 }
