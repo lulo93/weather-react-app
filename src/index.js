@@ -11,7 +11,11 @@ function App() {
       <Weather />
       <div className="credits">
         <small>
-          <a href="https://github.com/lulo93/weather-react-app" target="_blank">
+          <a
+            href="https://github.com/lulo93/weather-react-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Open-source code
           </a>
           {""} by Luisa Rua Estrada
