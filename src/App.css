@@ -1,9 +1,9 @@
 body {
-  font-family: "Blinker", sans-serif;
   font-weight: 300;
 }
 
 .weather-app-wrapper {
+  font-family: "Blinker", sans-serif;
   max-width: 750px;
   max-height: 600px;
   margin: 30px auto;
