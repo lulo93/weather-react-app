@@ -106,10 +106,12 @@ a {
   margin-bottom: 20px;
 }
 
-.weather-temperature img {
-  margin-right: 10px;
+.weatherIcon {
+  position: relative;
+  left: 35px;
   height: 100px;
   width: 100px;
+  margin-top: 8px;
 }
 
 .weather-temperature strong {
