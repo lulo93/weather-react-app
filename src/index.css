@@ -29,7 +29,11 @@ li {
 
 #additional-info {
   position: relative;
-  top: 30px;
+  top: 0px;
+}
+
+.unit a {
+  text-decoration: none;
 }
 
 a {
@@ -114,27 +118,17 @@ a {
   margin-top: 8px;
 }
 
-.weather-temperature strong {
+.temperature,
+.unit {
   color: #ffffff;
-  font-size: 64px;
+  display: inline-block;
+  font-size: 35px;
   font-weight: 400;
   line-height: 1;
-}
-
-#temperature {
-  color: #ffffff;
   text-shadow: 2px 2px 2px #1c71f1, 2px 2px 2px #1c71f1;
   position: relative;
-  left: 100px;
-  bottom: 84px;
-}
-
-.units {
-  font-weight: 400;
-  position: relative;
-  font-size: 16px;
-  top: -110px;
-  left: 105px;
+  right: 140px;
+  bottom: 0px;
 }
 
 .weather-temperature .active {

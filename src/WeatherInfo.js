@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo(props) {
   return (
@@ -22,50 +23,47 @@ export default function WeatherInfo(props) {
                   <WeatherIcon code={props.data.icon} />
                 </div>
               </div>
-              <div className="float-left">
-                <strong id="temperature"></strong>
-                <span className="units"></span>
-              </div>
             </div>
           </div>
-          <div className="col-sm-6" id="additional-info">
-            <ul>
-              <li id="celsius-link" className="active">
-                {Math.round(props.data.temperature)} °C
-              </li>
-              <li>{props.data.fahrenheit} °F</li>
-            </ul>
+          <div className="col-sm-6">
+            <div className="float-left">
+              <WeatherTemperature celsius={props.data.temperature} />
+            </div>
             <br />
-            <ul>
-              <li>
-                Feels like:{" "}
-                <span id="feels-like">{Math.round(props.data.FeelsLike)}</span>
-                °C
-              </li>
-              <li>
-                Humidity: <span id="humidity">{props.data.humidity}</span>%
-              </li>
-              <li>
-                Wind: <span id="wind">{props.data.wind}</span> km/h
-              </li>
-            </ul>
+            <div id="additional-info">
+              <ul>
+                <li>
+                  Feels like:{" "}
+                  <span id="feels-like">
+                    {Math.round(props.data.FeelsLike)}
+                  </span>
+                  °C
+                </li>
+                <li>
+                  Humidity: <span id="humidity">{props.data.humidity}</span>%
+                </li>
+                <li>
+                  Wind: <span id="wind">{props.data.wind}</span> km/h
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-
         <div className="weather-forecast" id="forecast">
           <div className="row">
             <div className="col-2">
               <div className="weather-forecast-date"></div>
-              <img src={props.data.imgLink} alt="" />{" "}
+              <WeatherIcon code={props.data.icon} />{" "}
               <div className="weather-forecast-temperatures">
                 <span className="weather-forecast-temperature-max">
                   {props.data.maxTemp}
+                  {""} °C
                 </span>
-                °C
+
                 <span className="weather-forecast-temperature-min">
-                  {props.data.minTemp}
+                  {" "}
+                  {props.data.minTemp} {""} °C
                 </span>
-                °C
               </div>
             </div>
           </div>
