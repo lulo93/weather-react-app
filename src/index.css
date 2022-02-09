@@ -89,7 +89,7 @@ a {
   border: 1px solid linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 
-.weather-forecast {
+.WeatherForecast {
   margin-top: 15px;
   text-align: center;
 }
@@ -104,6 +104,7 @@ a {
 
 .weather-forecast-temperature-min {
   opacity: 0.5;
+  margin-left: 5px;
 }
 
 .overview {

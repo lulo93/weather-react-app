@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import WeatherForecast from "./WeatherForecast";
 import WeatherInfo from "./WeatherInfo";
 import "./index.css";
 import "./App.css";
@@ -19,8 +19,7 @@ export default function Weather(props) {
       FeelsLike: response.data.main.feels_like,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
-      minTemp: "7",
-      maxTemp: "2",
+      coords: response.data.coord,
     });
   }
 
@@ -75,6 +74,7 @@ export default function Weather(props) {
               </div>
             </form>
             <WeatherInfo data={weatherData} />
+            <WeatherForecast coords={weatherData.coords} />
           </div>
         </div>
       </div>

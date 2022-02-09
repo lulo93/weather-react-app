@@ -20,7 +20,7 @@ export default function WeatherInfo(props) {
             <div className="clearfix weather-temperature">
               <div className="weatherIcon">
                 <div className="float-left">
-                  <WeatherIcon code={props.data.icon} />
+                  <WeatherIcon code={props.data.icon} size={68} />
                 </div>
               </div>
             </div>
@@ -46,25 +46,6 @@ export default function WeatherInfo(props) {
                   Wind: <span id="wind">{props.data.wind}</span> km/h
                 </li>
               </ul>
-            </div>
-          </div>
-        </div>
-        <div className="weather-forecast" id="forecast">
-          <div className="row">
-            <div className="col-2">
-              <div className="weather-forecast-date"></div>
-              <WeatherIcon code={props.data.icon} />{" "}
-              <div className="weather-forecast-temperatures">
-                <span className="weather-forecast-temperature-max">
-                  {props.data.maxTemp}
-                  {""} °C
-                </span>
-
-                <span className="weather-forecast-temperature-min">
-                  {" "}
-                  {props.data.minTemp} {""} °C
-                </span>
-              </div>
             </div>
           </div>
         </div>
