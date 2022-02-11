@@ -40,41 +40,47 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="container">
-        <div className="weather-app-wrapper">
-          <div className="weather-app">
-            <form onSubmit={handleSubmit} id="search-form" className="mb-3">
-              <div className="row">
-                <div className="col-sm-6">
-                  <input
-                    type="search"
-                    placeholder="Type a location.."
-                    className="form-control"
-                    id="city-input"
-                    autoComplete="off"
-                    onChange={handleCityChange}
-                  />
+      <div className="flex">
+        <div className="container">
+          <div className="weather-app-wrapper">
+            <div className="weather-app">
+              <form onSubmit={handleSubmit} id="search-form" className="mb-3">
+                <div className="row">
+                  <div className="col-sm-6">
+                    <input
+                      type="search"
+                      placeholder="Type a location.."
+                      className="form-control"
+                      id="city-input"
+                      autoComplete="off"
+                      onChange={handleCityChange}
+                    />
+                  </div>
+                  <div className="col-sm-2">
+                    <input
+                      type="submit"
+                      value="Search"
+                      className="btn btn-primary"
+                      id="search-button"
+                    />
+                  </div>
                 </div>
-                <div className="col-sm-2">
-                  <input
-                    type="submit"
-                    value="Search"
-                    className="btn btn-primary"
-                    id="search-button"
-                  />
-                </div>
-                <div className="col-sm-2">
-                  <input
-                    type="submit"
-                    value="Current Location"
-                    className="btn btn-primary"
-                    id="location-button"
-                  />
-                </div>
-              </div>
-            </form>
-            <WeatherInfo data={weatherData} />
-            <WeatherForecast coords={weatherData.coords} />
+              </form>
+              <WeatherInfo data={weatherData} />
+              <WeatherForecast coords={weatherData.coords} />
+            </div>
+          </div>
+          <div className="credits">
+            <small>
+              <a
+                href="https://github.com/lulo93/weather-react-app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open-source code
+              </a>
+              {""} by Luisa Rua Estrada
+            </small>
           </div>
         </div>
       </div>

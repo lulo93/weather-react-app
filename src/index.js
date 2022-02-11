@@ -10,18 +10,6 @@ function App() {
     <div className="App">
       <div className="container">
         <Weather defaultCity="London" />
-        <div className="credits">
-          <small>
-            <a
-              href="https://github.com/lulo93/weather-react-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Open-source code
-            </a>
-            {""} by Luisa Rua Estrada
-          </small>
-        </div>
       </div>
     </div>
   );

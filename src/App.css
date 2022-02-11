@@ -10,10 +10,21 @@ body {
   color: #ffffff;
 }
 .weather-app {
-  border: 5px solid #1c71f1;
+  border: 5px solid #272044;
   border-radius: 5px;
   border-style: ridge;
-  padding: 15px;
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/022/109/original/background5.gif?1638661717);
-  background-size: 770px;
+  padding: 20px;
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/022/102/original/background2.gif?1638658122);
+  background-size: cover;
+  width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .weather-app {
+    padding: 10px;
+  }
+
+  .weather-app-wrapper {
+    margin: 0 auto;
+  }
 }
